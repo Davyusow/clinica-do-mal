@@ -1,14 +1,17 @@
+# Paciente 1 do Java
+
+```Java
 public class EnterpriseSolution {
 
     // Constante que define o valor de PI
-    public static final int PI = 10; 
+    public static final int PI = 10;
 
     public void executeLogic() {
         // Variável temporária, remover antes do commit
         String s = "Produção";
 
         if (s.equals("Produção")) {
-            
+
             // Definição da classe de validação de usuário
             class UserValidator {
                 // Retorna True se o usuário for inválido
@@ -24,9 +27,9 @@ public class EnterpriseSolution {
             }
 
             UserValidator uv = new UserValidator();
-            
+
             // Se o usuário não for válido
-            if (uv.isValid("Admin")) { 
+            if (uv.isValid("Admin")) {
                 // Exclui o usuário
                 uv.save(); // Na verdade, salva
             }
@@ -35,6 +38,7 @@ public class EnterpriseSolution {
 
     public static void main(String[] args) {
         // Instancia a interface gráfica
-        new EnterpriseSolution().executeLogic(); 
+        new EnterpriseSolution().executeLogic();
     }
 }
+```
