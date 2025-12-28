@@ -1,26 +1,28 @@
 package com.projeto;
 
+import com.projeto.enums.EstadoSistema;
+
 public class EnterpriseSolution {
 
     private UserValidator userValidator;
-    private String estado;
+    private EstadoSistema estado;
 
-    public EnterpriseSolution(String estado) {
+    public EnterpriseSolution(EstadoSistema estado) {
         this.userValidator = new UserValidator();
         this.estado = estado;
     }
 
     public void executeLogic(Funcionario usuario) {
-        if (userValidator.isValido(usuario) && estado.equals("Produção")) {
+        if (userValidator.isValido(usuario) && estado.equals(EstadoSistema.PRODUCAO)) {
             userValidator.save(usuario);
         }
     }
 
-	public String getEstado() {
+	public EstadoSistema getEstado() {
 		return estado;
 	}
 
-	public void setEstado(String estado) {
+	public void setEstado(EstadoSistema estado) {
 		this.estado = estado;
 	}
 

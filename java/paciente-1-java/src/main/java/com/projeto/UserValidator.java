@@ -1,9 +1,11 @@
 package com.projeto;
 
+import com.projeto.enums.Cargo;
+
 public class UserValidator {
 
     public boolean isValido(Funcionario usuario) {
-        return usuario.getCargo().equals("Admin");
+        return usuario.getCargo().equals(Cargo.ADMIN);
     }
 
     public void save(Funcionario funcionario) {
