@@ -42,3 +42,18 @@ public class EnterpriseSolution {
     }
 }
 ```
+
+Oficialmente o pior código java que eu já vi na minha vida, eu malemá entendi o
+que ele quer realmente fazer, tem um monte de verificações sem sentido, e
+novamente, classes dentro de classes, a pior coisa já permitida por alguém.
+
+A variável `PI` por exemplo, e completamente irrelevante, além de estar errada,
+a classe dentro dela é quase que inútil, mas mantive por fazer sentido em um
+cenário mais escalável. Além dos textos soltos, onde realmente eu fazia no
+passado, mas como elas são usadas para validações, faz realmente mais sentido
+substituilas por `enum`, facilitando deverás a manuntenção e teste do código.
+
+Além claro de criar um objeto Funcionário, que era bem implicito no fim da
+função `executeLogic`. Aqui eu sinto que tive que tirar leite de pedra, só
+pra minimamente entender o propósito do código proposto (vou nem comentar dos
+comentários mentirosos 💀💀)
