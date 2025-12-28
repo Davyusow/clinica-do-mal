@@ -1,5 +1,4 @@
-
-IMPOSTO = 1.2
+IMPOSTO = 1.2 # imposto de 20%
 TAXA_FIXA = 10
 
 def processar(valor):
@@ -8,14 +7,11 @@ def processar(valor):
 def calcular_imposto(lista_valores):
     total = 0
     for valor in lista_valores:
-        if valor > 0:
+        if valor >= 0:
             total += processar(valor)
-        else:
-            print(f'O valor {valor} é inválido!\n')
-            pass
     return total + TAXA_FIXA
 
-valores = [-50,-20,-10, 5, 10 ,50, 25]
+valores = [-50,-20,-10, 5, 10 ,50, 25, 0]
 resultado = calcular_imposto(valores)
 
 print(f'Com os valores {valores}\n O resultado total do imposto é {resultado} ')
